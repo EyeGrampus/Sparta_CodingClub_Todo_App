@@ -14,9 +14,12 @@ public class Resource {
 
 public extension Resource.Storyboard {
     static var MainViewStoryBoard: UIStoryboard {
-           UIStoryboard(name: "MainViewController", bundle: Bundle(for: Resource.self))
+           UIStoryboard(name: "TodoViewController", bundle: Bundle(for: Resource.self))
     }
     static var ToDoDetailViewStoryBoard: UIStoryboard {
-        UIStoryboard(name: "ToDoDetailViewController", bundle: Bundle(for: Resource.self))
+        UIStoryboard(name: "TodoListViewController", bundle: Bundle(for: Resource.self))
+    }
+    static var TodoCompleteViewController: UIStoryboard {
+        UIStoryboard(name: "TodoCompleteViewController", bundle: Bundle(for: Resource.self))
     }
 }

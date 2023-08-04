@@ -9,12 +9,11 @@ import UIKit
 
 final class TodoViewController: UIViewController {
     
-    @IBOutlet weak var navigationBar: UINavigationBar!
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .purple
-        navigationBar.delegate = self
-        navigationBar.makeTransparent()
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "plus"), style: .plain, target: self, action: #selector(todoAddNavigationBarButtonTapped))
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -27,6 +26,10 @@ final class TodoViewController: UIViewController {
         }
     }
     
+    @objc func todoAddNavigationBarButtonTapped(_ sender: Any) {
+        guard let viewController = TodoAddViewController.viewControllerInstance() else {return}
+        navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 extension TodoViewController: UINavigationBarDelegate {

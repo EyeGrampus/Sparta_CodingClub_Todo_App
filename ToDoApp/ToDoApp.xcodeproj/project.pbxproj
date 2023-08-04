@@ -17,6 +17,16 @@
 		F11BA14E2A79526000C6024F /* ToDoCompleteCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F11BA14A2A79524F00C6024F /* ToDoCompleteCollectionViewCell.xib */; };
 		F11BA1502A7962EE00C6024F /* UISwitch+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA14F2A7962EE00C6024F /* UISwitch+.swift */; };
 		F11BA1522A79705B00C6024F /* UINavigationBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA1512A79705B00C6024F /* UINavigationBar+.swift */; };
+		F11BA1562A7AA95A00C6024F /* TodoRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA1552A7AA95A00C6024F /* TodoRepository.swift */; };
+		F11BA1582A7AA96200C6024F /* TodoProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA1572A7AA96200C6024F /* TodoProvider.swift */; };
+		F11BA15C2A7AACC800C6024F /* TodoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA15B2A7AACC800C6024F /* TodoAddViewController.swift */; };
+		F11BA15D2A7AAD3600C6024F /* TodoAddViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11BA1592A7AACB600C6024F /* TodoAddViewController.storyboard */; };
+		F11BA15F2A7AB9DE00C6024F /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA15E2A7AB9DE00C6024F /* UIView+Design.swift */; };
+		F11BA1652A7ABEDE00C6024F /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA1642A7ABEDE00C6024F /* DatePickerViewController.swift */; };
+		F11BA1662A7ABEEE00C6024F /* DatePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11BA1622A7ABECF00C6024F /* DatePickerViewController.storyboard */; };
+		F11BA1672A7ABEF100C6024F /* DatePickerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F11BA1622A7ABECF00C6024F /* DatePickerViewController.storyboard */; };
+		F11BA1692A7AC13200C6024F /* DatePickerPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA1682A7AC13200C6024F /* DatePickerPresentationController.swift */; };
+		F11BA16B2A7AC61C00C6024F /* Date+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = F11BA16A2A7AC61C00C6024F /* Date+Format.swift */; };
 		F144A3952A780BB2007564FD /* TodoViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F144A3942A780BB2007564FD /* TodoViewController.storyboard */; };
 		F144A39F2A78120E007564FD /* Resource.docc in Sources */ = {isa = PBXBuildFile; fileRef = F144A39E2A78120E007564FD /* Resource.docc */; };
 		F144A3A02A78120E007564FD /* Resource.h in Headers */ = {isa = PBXBuildFile; fileRef = F144A39D2A78120E007564FD /* Resource.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -31,6 +41,9 @@
 		F19D0A2B2A77E825007D96B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19D0A292A77E825007D96B8 /* LaunchScreen.storyboard */; };
 		F19D0A332A77E83E007D96B8 /* HomeView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19D0A322A77E83E007D96B8 /* HomeView.storyboard */; };
 		F19D0A352A77E875007D96B8 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19D0A342A77E875007D96B8 /* TodoListViewController.swift */; };
+		F1B071782A7BECE40047BEBF /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B071772A7BECE30047BEBF /* UIViewController+.swift */; };
+		F1B0717A2A7BEF960047BEBF /* ImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B071792A7BEF960047BEBF /* ImageProvider.swift */; };
+		F1B0717C2A7C137E0047BEBF /* UIImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B0717B2A7C137E0047BEBF /* UIImage+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +80,15 @@
 		F11BA14A2A79524F00C6024F /* ToDoCompleteCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToDoCompleteCollectionViewCell.xib; sourceTree = "<group>"; };
 		F11BA14F2A7962EE00C6024F /* UISwitch+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+.swift"; sourceTree = "<group>"; };
 		F11BA1512A79705B00C6024F /* UINavigationBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationBar+.swift"; sourceTree = "<group>"; };
+		F11BA1552A7AA95A00C6024F /* TodoRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRepository.swift; sourceTree = "<group>"; };
+		F11BA1572A7AA96200C6024F /* TodoProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoProvider.swift; sourceTree = "<group>"; };
+		F11BA1592A7AACB600C6024F /* TodoAddViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoAddViewController.storyboard; sourceTree = "<group>"; };
+		F11BA15B2A7AACC800C6024F /* TodoAddViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoAddViewController.swift; sourceTree = "<group>"; };
+		F11BA15E2A7AB9DE00C6024F /* UIView+Design.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
+		F11BA1622A7ABECF00C6024F /* DatePickerViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DatePickerViewController.storyboard; sourceTree = "<group>"; };
+		F11BA1642A7ABEDE00C6024F /* DatePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		F11BA1682A7AC13200C6024F /* DatePickerPresentationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerPresentationController.swift; sourceTree = "<group>"; };
+		F11BA16A2A7AC61C00C6024F /* Date+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Format.swift"; sourceTree = "<group>"; };
 		F144A3942A780BB2007564FD /* TodoViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoViewController.storyboard; sourceTree = "<group>"; };
 		F144A39B2A78120E007564FD /* Resource.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Resource.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F144A39D2A78120E007564FD /* Resource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resource.h; sourceTree = "<group>"; };
@@ -83,6 +105,9 @@
 		F19D0A342A77E875007D96B8 /* TodoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		F19D0A362A77E911007D96B8 /* TodoListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TodoListViewController.storyboard; sourceTree = "<group>"; };
 		F19D0A382A77FBEE007D96B8 /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+.swift"; sourceTree = "<group>"; };
+		F1B071772A7BECE30047BEBF /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
+		F1B071792A7BEF960047BEBF /* ImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageProvider.swift; sourceTree = "<group>"; };
+		F1B0717B2A7C137E0047BEBF /* UIImage+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +147,8 @@
 				F11BA1442A794C9600C6024F /* TodoCompleteViewController.storyboard */,
 				F11BA1392A79261E00C6024F /* TodoTableViewCell.xib */,
 				F11BA14A2A79524F00C6024F /* ToDoCompleteCollectionViewCell.xib */,
+				F11BA1592A7AACB600C6024F /* TodoAddViewController.storyboard */,
+				F11BA1622A7ABECF00C6024F /* DatePickerViewController.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -134,6 +161,9 @@
 				F11BA1382A79261E00C6024F /* TodoTableViewCell.swift */,
 				F11BA1462A794CA500C6024F /* TodoCompleteViewController.swift */,
 				F11BA1492A79524F00C6024F /* ToDoCompleteCollectionViewCell.swift */,
+				F11BA15B2A7AACC800C6024F /* TodoAddViewController.swift */,
+				F11BA1642A7ABEDE00C6024F /* DatePickerViewController.swift */,
+				F11BA1682A7AC13200C6024F /* DatePickerPresentationController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -144,6 +174,10 @@
 				F19D0A382A77FBEE007D96B8 /* NSObject+.swift */,
 				F11BA14F2A7962EE00C6024F /* UISwitch+.swift */,
 				F11BA1512A79705B00C6024F /* UINavigationBar+.swift */,
+				F11BA15E2A7AB9DE00C6024F /* UIView+Design.swift */,
+				F11BA16A2A7AC61C00C6024F /* Date+Format.swift */,
+				F1B071772A7BECE30047BEBF /* UIViewController+.swift */,
+				F1B0717B2A7C137E0047BEBF /* UIImage+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -156,6 +190,23 @@
 				F19D0A2C2A77E825007D96B8 /* Info.plist */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		F11BA1532A7AA93A00C6024F /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F11BA1572A7AA96200C6024F /* TodoProvider.swift */,
+				F1B071792A7BEF960047BEBF /* ImageProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		F11BA1542A7AA94100C6024F /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				F11BA1552A7AA95A00C6024F /* TodoRepository.swift */,
+			);
+			path = Repository;
 			sourceTree = "<group>";
 		};
 		F144A39C2A78120E007564FD /* Resource */ = {
@@ -191,6 +242,8 @@
 		F19D0A1D2A77E823007D96B8 /* ToDoApp */ = {
 			isa = PBXGroup;
 			children = (
+				F11BA1532A7AA93A00C6024F /* Provider */,
+				F11BA1542A7AA94100C6024F /* Repository */,
 				F11BA1432A794C4900C6024F /* App */,
 				F11BA1422A794C4300C6024F /* Extension */,
 				F11BA1412A794C3800C6024F /* ViewController */,
@@ -292,6 +345,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F11BA1672A7ABEF100C6024F /* DatePickerViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +356,9 @@
 				F144A3952A780BB2007564FD /* TodoViewController.storyboard in Resources */,
 				F19D0A2B2A77E825007D96B8 /* LaunchScreen.storyboard in Resources */,
 				F19D0A282A77E825007D96B8 /* Assets.xcassets in Resources */,
+				F11BA15D2A7AAD3600C6024F /* TodoAddViewController.storyboard in Resources */,
 				F11BA13E2A792D7300C6024F /* TodoListViewController.storyboard in Resources */,
+				F11BA1662A7ABEEE00C6024F /* DatePickerViewController.storyboard in Resources */,
 				F19D0A332A77E83E007D96B8 /* HomeView.storyboard in Resources */,
 				F11BA14E2A79526000C6024F /* ToDoCompleteCollectionViewCell.xib in Resources */,
 				F11BA13F2A792D7700C6024F /* TodoTableViewCell.xib in Resources */,
@@ -326,16 +382,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1B0717A2A7BEF960047BEBF /* ImageProvider.swift in Sources */,
+				F11BA16B2A7AC61C00C6024F /* Date+Format.swift in Sources */,
 				F11BA14D2A79525500C6024F /* ToDoCompleteCollectionViewCell.swift in Sources */,
 				F11BA1502A7962EE00C6024F /* UISwitch+.swift in Sources */,
 				F11BA13C2A79262600C6024F /* TodoTableViewCell.swift in Sources */,
 				F144A3AC2A78143C007564FD /* NSObject+.swift in Sources */,
+				F11BA1652A7ABEDE00C6024F /* DatePickerViewController.swift in Sources */,
 				F11BA1472A794CA500C6024F /* TodoCompleteViewController.swift in Sources */,
+				F11BA1562A7AA95A00C6024F /* TodoRepository.swift in Sources */,
 				F11BA1372A79208E00C6024F /* Todo.swift in Sources */,
 				F11BA1522A79705B00C6024F /* UINavigationBar+.swift in Sources */,
 				F19D0A232A77E823007D96B8 /* TodoViewController.swift in Sources */,
+				F11BA1692A7AC13200C6024F /* DatePickerPresentationController.swift in Sources */,
 				F19D0A352A77E875007D96B8 /* TodoListViewController.swift in Sources */,
+				F11BA15C2A7AACC800C6024F /* TodoAddViewController.swift in Sources */,
+				F1B0717C2A7C137E0047BEBF /* UIImage+.swift in Sources */,
+				F11BA1582A7AA96200C6024F /* TodoProvider.swift in Sources */,
 				F19D0A1F2A77E823007D96B8 /* AppDelegate.swift in Sources */,
+				F11BA15F2A7AB9DE00C6024F /* UIView+Design.swift in Sources */,
+				F1B071782A7BECE40047BEBF /* UIViewController+.swift in Sources */,
 				F19D0A212A77E823007D96B8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -547,6 +613,7 @@
 				DEVELOPMENT_TEAM = KD3GVSQ9P4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoApp/App/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "갤러리 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = HomeView;
@@ -576,6 +643,7 @@
 				DEVELOPMENT_TEAM = KD3GVSQ9P4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ToDoApp/App/Info.plist;
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "갤러리 접근이 필요합니다.";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = HomeView;

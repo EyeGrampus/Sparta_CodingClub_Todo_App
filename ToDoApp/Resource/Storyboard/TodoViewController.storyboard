@@ -34,25 +34,13 @@
                                     <segue destination="9bg-E7-hiG" kind="show" id="kII-tm-Fh4"/>
                                 </connections>
                             </button>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SPP-ds-p5m">
-                                <rect key="frame" x="0.0" y="46" width="393" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <navigationItem id="EHM-s6-NfC">
-                                        <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="uXK-GX-0Z5"/>
-                                    </navigationItem>
-                                </items>
-                                <navigationBarAppearance key="standardAppearance"/>
-                            </navigationBar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="UtE-w6-u6S"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="cIX-BH-lht"/>
-                    <connections>
-                        <outlet property="navigationBar" destination="SPP-ds-p5m" id="tG6-vS-Gjs"/>
-                    </connections>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="cJn-LZ-veS"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uaP-wb-x6S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -78,9 +66,18 @@
             </objects>
             <point key="canvasLocation" x="1046" y="-242"/>
         </scene>
+        <!--TodoAddViewController-->
+        <scene sceneID="EFH-bA-C5s">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="TodoAddViewController" storyboardName="TodoAddViewController" referencedIdentifier="TodoAddViewController" id="wAq-rC-RW9" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="qwC-w4-iTV"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VsV-gt-qV6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1015" y="-488"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -10,8 +10,8 @@ import UIKit
 final class TodoCompleteViewController: UIViewController {
 
     @IBOutlet weak var todoCompletCollectionView: UICollectionView!
-    private let mocks = [Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock]
-    
+    private let todoRepository: TodoRepositoryProtocol = TodoRepository(todoProvider: TodoProvider.instance)
+
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -32,13 +32,13 @@ final class TodoCompleteViewController: UIViewController {
 
 extension TodoCompleteViewController: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        mocks.count
+        todoRepository.getCompletTodoList().count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ToDoCompleteCollectionViewCell.identifier, for: indexPath) as? ToDoCompleteCollectionViewCell else {return .init()}
-        let mock = mocks[indexPath.row]
-        cell.bind(mock)
+        let todo = todoRepository.getCompletTodoList()[indexPath.row]
+        cell.bind(todo, todoRepository)
         return cell
     }
     

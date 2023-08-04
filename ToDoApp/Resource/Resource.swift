@@ -22,4 +22,7 @@ public extension Resource.Storyboard {
     static var TodoCompleteViewController: UIStoryboard {
         UIStoryboard(name: "TodoCompleteViewController", bundle: Bundle(for: Resource.self))
     }
+    static var TodoAddViewController: UIStoryboard {
+        UIStoryboard(name: "TodoAddViewController", bundle: Bundle(for: Resource.self))
+    }
 }

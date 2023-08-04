@@ -10,7 +10,7 @@ import UIKit
 final class TodoListViewController: UIViewController {
     
     @IBOutlet weak var todoTableView: UITableView!
-    private let todoList: [Todo] = [Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock, Todo.mock]
+    private let todoRepository: TodoRepositoryProtocol = TodoRepository(todoProvider: TodoProvider.instance)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +30,13 @@ final class TodoListViewController: UIViewController {
 
 extension TodoListViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todoList.count
+        return todoRepository.getNotCompletTodoList().count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: TodoTableViewCell.identifier, for: indexPath) as? TodoTableViewCell else { return UITableViewCell() }
-        let todo = todoList[indexPath.row]
-        cell.bind(todo)
+        let todo = todoRepository.getNotCompletTodoList()[indexPath.row]
+        cell.bind(todo, todoRepository)
         return cell
     }
 }

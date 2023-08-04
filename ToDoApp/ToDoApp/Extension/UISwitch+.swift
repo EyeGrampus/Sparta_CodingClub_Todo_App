@@ -9,7 +9,7 @@ import UIKit
 import Combine
 
 extension UISwitch {
-    var isOnValue: AnyPublisher<Bool, Never> {
+    var tapPublish: AnyPublisher<Bool, Never> {
         return self.publisher(for: \.isOn)
             .eraseToAnyPublisher()
     }

@@ -19,15 +19,15 @@ extension NSObject {
 }
 
 protocol ViewControllerInitiable {
-    static func storyboaryInstance(name ofStoryBoard: String) -> UIViewController?
-    static func storyboaryInstance() -> UIViewController?
+    static func viewControllerInstance(name ofStoryBoard: String) -> UIViewController?
+    static func viewControllerInstance() -> UIViewController?
 }
 
 extension ViewControllerInitiable where Self: UIViewController {
-    static func storyboaryInstance(name ofStoryBoard: String) -> UIViewController? {
-        return Resource.Storyboard.MainViewStoryBoard.instantiateViewController(withIdentifier: classNameToString()) as? Self
+    static func viewControllerInstance(name ofStoryBoard: String) -> UIViewController? {
+        return UIStoryboard(name: ofStoryBoard, bundle: nil).instantiateViewController(withIdentifier: classNameToString()) as? Self
     }
-    static func storyboaryInstance() -> UIViewController? {
-        return Resource.Storyboard.ToDoDetailViewStoryBoard.instantiateViewController(withIdentifier: classNameToString()) as? Self
+    static func viewControllerInstance() -> UIViewController? {
+        return UIStoryboard(name: classNameToString(), bundle: nil).instantiateViewController(withIdentifier: classNameToString()) as? Self
     }
 }

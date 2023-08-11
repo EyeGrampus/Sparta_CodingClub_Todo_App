@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24564C13F2C60AD057B3C7CB /* RIBs in Frameworks */ = {isa = PBXBuildFile; productRef = 79F523D732E6BA4C5EFA3274 /* RIBs */; };
 		487399DB9C8FBB2A4B78BFA7 /* ThirdPartyLib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7DC52CFF6683FA84E78694E9 /* ThirdPartyLib.framework */; platformFilter = ios; };
 		7CA0B12103F3B1469FD1C66E /* sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFA03D469529CB178E2EC8C /* sources.swift */; };
 		800560CF9BE5B04DD7851D74 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 7BC674DBD7171933272218DA /* FirebaseMessaging */; };
@@ -76,6 +77,7 @@
 				800560CF9BE5B04DD7851D74 /* FirebaseMessaging in Frameworks */,
 				AE042A986F4AC6D07B42A12C /* FirebaseAnalytics in Frameworks */,
 				E15E88253EBE744FE7F38D3A /* FirebaseCrashlytics in Frameworks */,
+				24564C13F2C60AD057B3C7CB /* RIBs in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +201,7 @@
 				7BC674DBD7171933272218DA /* FirebaseMessaging */,
 				B6A0A97B31F2F418A7518B09 /* FirebaseAnalytics */,
 				62B7E055B6BD49D7A997DEC2 /* FirebaseCrashlytics */,
+				79F523D732E6BA4C5EFA3274 /* RIBs */,
 			);
 			productName = ThirdPartyLib;
 			productReference = 7DC52CFF6683FA84E78694E9 /* ThirdPartyLib.framework */;
@@ -225,6 +228,7 @@
 			mainGroup = AA3F4A6E62A393D49C77DD59;
 			packageReferences = (
 				6D162CE41E2B40FA4DFF1930 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				4E2E0159DF6B790280207FC1 /* XCRemoteSwiftPackageReference "RIBs" */,
 			);
 			productRefGroup = 99610B6746DED12D992F54AB /* Products */;
 			projectDirPath = "";
@@ -541,6 +545,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		4E2E0159DF6B790280207FC1 /* XCRemoteSwiftPackageReference "RIBs" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uber/RIBs";
+			requirement = {
+				kind = exactVersion;
+				version = 0.15.2;
+			};
+		};
 		6D162CE41E2B40FA4DFF1930 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -555,6 +567,10 @@
 		62B7E055B6BD49D7A997DEC2 /* FirebaseCrashlytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = FirebaseCrashlytics;
+		};
+		79F523D732E6BA4C5EFA3274 /* RIBs */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RIBs;
 		};
 		7BC674DBD7171933272218DA /* FirebaseMessaging */ = {
 			isa = XCSwiftPackageProductDependency;

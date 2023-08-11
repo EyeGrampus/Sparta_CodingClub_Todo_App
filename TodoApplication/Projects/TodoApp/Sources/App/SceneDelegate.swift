@@ -22,7 +22,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         if let windowScene = scene as? UIWindowScene {
             let window = UIWindow(windowScene: windowScene)
             self.window = window
-            let launchRouter = RootBuilder(dependency: AppComponent()).build()
+            let todoRepository = TodoRepository(todoProvider: TodoProvider.instance)
+            let imageRepository = ImageRepository(imageProvider: ImageProvider())
+            let launchRouter = RootBuilder(dependency: AppComponent(
+                todoRepository: todoRepository,
+                imageRepository: imageRepository
+            )).build()
             self.launchRouter = launchRouter
             // UIWindow의 rootViewController로 UINavigationController를 설정합니다.
             launchRouter.launch(from: window)

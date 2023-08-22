@@ -30,6 +30,13 @@ final class RootRouter: LaunchRouter<RootInteractable, RootViewControllable>, Ro
         self.rootViewController = viewController as! UINavigationController
         super.init(interactor: interactor, viewController: viewController)
         interactor.router = self
+        do {
+            let plistProvider = PlistProvider<LocalTargetType>()
+            try plistProvider.create(LocalTargetType.todo(Todo.mock))
+            dump(try plistProvider.read(LocalTargetType.todo()))
+        } catch {
+            print(error)
+        }
     }
 
     func cleanupViews() {

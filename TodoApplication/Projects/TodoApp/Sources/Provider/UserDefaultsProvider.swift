@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct UserDefaultsProvider<T: LocalStorable> {
+public struct UserDefaultsProvider<T: LocalStorable> {
     
     private enum UserDefaultsProviderError: LocalizedError {
         case dataDeleteFailed
@@ -22,9 +22,9 @@ struct UserDefaultsProvider<T: LocalStorable> {
     private let userDefaults = UserDefaults.standard
 }
 
-extension UserDefaultsProvider {
+extension UserDefaultsProvider: LocalProviderProtocol {
     
-    func create<T: LocalStorable>(_ type: T) throws {
+    public func create<T: LocalStorable>(_ type: T) throws {
         guard let data = type.enocodeData else {
             throw UserDefaultsProviderError.encodableDataDoesntExist
         }
@@ -34,7 +34,7 @@ extension UserDefaultsProvider {
         userDefaults.set(encodedData, forKey: type.identifier)
     }
     
-    func read<T: LocalStorable>(_ type: T) throws -> Decodable {
+    public func read<T: LocalStorable>(_ type: T) throws -> Decodable {
         guard let storedData = userDefaults.object(forKey: type.identifier) as? Data else {
             throw UserDefaultsProviderError.storedDataDeosntExist
         }
@@ -47,7 +47,7 @@ extension UserDefaultsProvider {
         return convertedData
     }
     
-    func delete<T: LocalStorable>(_ type: T) throws {
+    public func delete<T: LocalStorable>(_ type: T) throws {
         userDefaults.set(nil, forKey: type.identifier)
         guard userDefaults.bool(forKey: type.identifier) == false else {
             throw UserDefaultsProviderError.dataDeleteFailed

@@ -8,39 +8,39 @@
 
 import Foundation
 
-protocol LocalStorable {
+public protocol LocalStorable {
     var identifier: String { get }
     var encodeType: Encodable.Type? { get }
     var decodeType: Decodable.Type? { get }
     var enocodeData: Encodable? { get }
 }
 
-enum LocalTargetType: LocalStorable {
+public enum LocalTargetType: LocalStorable {
 
     case todo(_ todo: Todo? = nil)
     
-    var identifier: String {
+    public var identifier: String {
         switch self {
         case .todo:
             return "Todo"
         }
     }
     
-    var encodeType: Encodable.Type? {
+    public var encodeType: Encodable.Type? {
         switch self{
         case .todo:
             return Todo.self
         }
     }
     
-    var decodeType: Decodable.Type? {
+    public var decodeType: Decodable.Type? {
         switch self {
         case .todo:
             return Todo.self
         }
     }
     
-    var enocodeData: Encodable? {
+    public var enocodeData: Encodable? {
         switch self {
         case let .todo(todo):
             return todo

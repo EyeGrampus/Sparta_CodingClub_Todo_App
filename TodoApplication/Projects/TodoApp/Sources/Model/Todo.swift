@@ -7,7 +7,7 @@
 
 import Foundation
 
-public final class Todo: Codable, Identifiable {
+public final class Todo: Codable {
     var title: String
     var context: String
     var image: Data?

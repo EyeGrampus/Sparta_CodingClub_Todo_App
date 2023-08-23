@@ -1,11 +1,5 @@
 # Sparta_CodingClub_Todo_App
 
-# 디렉토리 구조 설명 
-
-- ToDoApp 은 Xcode 만을 이용해서 만든 앱입니다. 그러나 1주일전에 만든 것이여서 안보셔도 됩니다
-- TodoApplication 은 Tuist 를 이용해서 모듈화를 진행해본 앱입니다. 이것을 보시면 됩니다.
-
-
 # 사용법
 
 ## Tuist 설치
